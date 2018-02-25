@@ -58,7 +58,7 @@ public class Data
             {
                 if (Data != null)
                 {
-                    StreamWriter writer = new StreamWriter("TempSensorData.txt", true);
+                    StreamWriter writer = new StreamWriter("TempSensorData.txt",false);
 
                     foreach (double element in Data)
                     {
@@ -86,30 +86,26 @@ public class Data
             }
             return IsWritten;
         }
-        public double[] ReadDataFromFile(string FileName)
+        public List<double> ReadDataFromFile(string FileName)
         {
             bool IsRead = false;
+            List<double> DataFromFile = new List<double> { };
             try
             {
                 if (File.Exists(FileName))
                 {
-                    double i;
+                    double value;
                     string[] StringsFromFile = File.ReadAllLines(FileName);
-                    List<double> DataFromFile = new List<double> { };
                     foreach (string line in StringsFromFile)
                     {
-                        Console.WriteLine("\t" + line);
-                        if (double.TryParse(line, out i))
+                        //Console.WriteLine("\t" + line);
+                        if (double.TryParse(line, out value))
                         {
-                            DataFromFile.Add(i);
-                            foreach(double element in DataFromFile)
-                            {
-                                Console.WriteLine(element.ToString());
-                            }
+                            DataFromFile.Add(value);
+                            //DataFromFile.ForEach(Console.WriteLine);
                         }
                     }
                     IsRead = true;
-
                 }
                 else { Console.WriteLine("the " + FileName + " does not exist"); }
             }
@@ -126,9 +122,8 @@ public class Data
                     Console.WriteLine("Work with file has been finished unsuccessfully ");
                 };
             }
+            return DataFromFile;
         }
-
-
     }
 }
     
