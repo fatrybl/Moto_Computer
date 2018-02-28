@@ -31,3 +31,10 @@ C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\RpiApp\bin\Debug\Comm
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\RpiApp\bin\Debug\Common.Logging.Core.xml
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\RpiApp\bin\Debug\Common.Logging.pdb
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\RpiApp\bin\Debug\Common.Logging.xml
+C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.csprojResolveAssemblyReference.cache
+C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.Form1.resources
+C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.Properties.Resources.resources
+C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.GenerateResource.Cache
+C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.CoreCompileInputs.cache
+C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.exe
+C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.pdb

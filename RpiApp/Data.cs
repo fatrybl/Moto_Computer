@@ -14,7 +14,9 @@ namespace RpiApp
 public class Data
 {
     public class TempSensor : Data // класс датчика температуры
-    {
+   {
+        public TempSensor()
+        {}       
         private IGpioConnectionDriver driver;
         public bool TempSensorConnection(int PinNumber)
         {
