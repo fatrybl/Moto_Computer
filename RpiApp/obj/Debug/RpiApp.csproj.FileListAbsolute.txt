@@ -38,3 +38,37 @@ C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.Gen
 C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.CoreCompileInputs.cache
 C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.exe
 C:\Users\Mark-DELL\Desktop\work\Moto_Computer\RpiApp\obj\Debug\RpiApp.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\RpiApp.exe.config
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\RpiApp.exe
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\RpiApp.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.Components.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.GeneralPurpose.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.Interop.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.System.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.InterIntegratedCircuit.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\UnitsNet.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Common.Logging.Core.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.SerialPeripheralInterface.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Common.Logging.dll
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.Components.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.Components.dll.config
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.GeneralPurpose.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.System.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.InterIntegratedCircuit.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.InterIntegratedCircuit.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Common.Logging.Core.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Common.Logging.Core.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.SerialPeripheralInterface.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Raspberry.IO.SerialPeripheralInterface.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Common.Logging.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Common.Logging.xml
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.Form1.resources
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.Properties.Resources.resources
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.GenerateResource.Cache
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.exe
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.pdb
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.CopyComplete
