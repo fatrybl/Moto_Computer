@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using Raspberry.IO.GeneralPurpose;
 using Raspberry.IO;
+
 namespace RpiApp
 {
 
@@ -51,8 +52,8 @@ public class Data
     //        throw new NotImplementedException();
     //    }
     //}
-    public class TempSensor : Data // класс датчика температуры
-   {
+    public class TempSensor : Data, IInputOutputBinaryPin // класс датчика температуры
+    {
         public TempSensor()
         {
             Console.WriteLine("Enter number of conected pin");
@@ -61,18 +62,17 @@ public class Data
 
         }
 
-        public ConnectorPin TempPin;
-        
-        //public IInputOutputBinaryPin Pin;
-        public GpioInputOutputBinaryPin myPin;
 
-        
+        public ConnectorPin TempPin;// real pin
 
-        public ConnectorPin ConnectorPinDetector(int IncomingPort)//gets number of the port from user and assigns real port
+        private IInputOutputBinaryPin pin;// Interfacemy pin for temperature sensor
+        public int PinNumber { get; set; }
+
+        public ConnectorPin ConnectorPinDetector(int PinNumber)//gets number of the port from user and assigns real port
         {
             //3 5 7 8  10 11 12 13 15 16 18 19 21 22 23 24 26 27 28 29 31 32 33 35 36 37 38 40 its phisical location
             ConnectorPin pin = ConnectorPin.P1Pin3;
-            switch(IncomingPort)
+            switch(this.PinNumber)
             {
                 case 3:
                     pin = ConnectorPin.P1Pin3;
@@ -284,11 +284,10 @@ public class Data
 
         public void AsInput()
         {
+
             TempPin = ConnectorPinDetector(11);
-            TempPin.Input();
-            TempSensorConnection(this.myPin);
-           
-            //throw new NotImplementedException();
+            var driver= GpioConnectionSettings.GetBestDriver(GpioConnectionDriverCapabilities.CanWorkOnThirdPartyComputers);
+            var pin = driver.InOut(TempPin);
         }
 
         public void AsOutput()
@@ -298,7 +297,14 @@ public class Data
 
         public bool Read()
         {
-            Console.WriteLine(GetTempSensorData(myPin).ToString());
+            using (var dhtConnection = new Raspberry.IO.Components.Sensors.Temperature.Dht.Dht22Connection(pin))
+            {
+                var data = dhtConnection.GetData();
+                if (data != null)
+                    Console.WriteLine("{0:0.00}% humidity, {1:0.0}°C, {2} attempts", data.RelativeHumidity.Percent, data.Temperature.DegreesCelsius, data.AttemptCount);
+                else
+                    Console.WriteLine("Unable to read data");
+            }
             throw new NotImplementedException();
         }
 
