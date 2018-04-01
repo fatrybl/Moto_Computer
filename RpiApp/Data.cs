@@ -10,12 +10,63 @@ namespace RpiApp
 public class Data
 
 {
-    public class TempSensor : Data,IInputOutputBinaryPin // класс датчика температуры
+    //public class TemperaturePin : IInputOutputBinaryPin
+    //{
+    //    ConnectorPin Pin;
+
+    //    public TemperaturePin(ConnectorPin pin)
+    //      {
+    //        Pin = pin;
+    //      }
+
+    //    public void AsInput()
+    //    {
+    //        //throw new NotImplementedException();
+    //        Pin.Input();
+    //    }
+
+    //    public void AsOutput()
+    //    {
+    //        //throw new NotImplementedException();
+    //        Pin.Output();
+    //    }
+
+    //    public void Dispose()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public bool Read()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public void Wait(bool waitForUp = true, TimeSpan timeout = default(TimeSpan))
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public void Write(bool state)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+    public class TempSensor : Data // класс датчика температуры
    {
         public TempSensor()
-        { }
+        {
+            Console.WriteLine("Enter number of conected pin");
+            int PinNumber = Console.Read();
+            TempPin = ConnectorPinDetector(PinNumber);
 
-        ConnectorPin TempPin;
+        }
+
+        public ConnectorPin TempPin;
+        
+        //public IInputOutputBinaryPin Pin;
+        public GpioInputOutputBinaryPin myPin;
+
+        
 
         public ConnectorPin ConnectorPinDetector(int IncomingPort)//gets number of the port from user and assigns real port
         {
@@ -112,17 +163,17 @@ public class Data
             return pin;
         }
 
-        public bool TempSensorConnection(ConnectorPin Pin)
+        public bool TempSensorConnection(GpioInputOutputBinaryPin Pin)
         {
             bool IsConnected = false;
             try
             {
-                TemperaturePin pin = new TemperaturePin();
-                using (Raspberry.IO.Components.Sensors.Temperature.Dht.Dht22Connection dht22Connection = new Raspberry.IO.Components.Sensors.Temperature.Dht.Dht22Connection(pin))
+
+                using (Raspberry.IO.Components.Sensors.Temperature.Dht.Dht22Connection dht22Connection = new Raspberry.IO.Components.Sensors.Temperature.Dht.Dht22Connection(Pin))
                 {
 
                     Raspberry.IO.Components.Sensors.Temperature.Dht.DhtData data = new Raspberry.IO.Components.Sensors.Temperature.Dht.DhtData();
-                    data = dht22Connection.GetData();
+                    //data = dht22Connection.GetData();
 
                 }
 
@@ -144,15 +195,10 @@ public class Data
 
         }
 
-        public double GetTempSensorData(GpioInputOutputBinaryPin TempPin)//считывает данные с датчика температуры, сохраняет последние 200 изменений в файл и ОЗУ.
+        public Raspberry.IO.Components.Sensors.Temperature.Dht.DhtData GetTempSensorData()//считывает данные с датчика температуры, сохраняет последние 200 изменений в файл и ОЗУ.
         {
-            double TempData = 0;
-            Console.WriteLine("Pin11 is connected and gets Data ");
-            bool d = false;
-            d = TempPin.Read();
-            if (d == true) { TempData = 1; }
-            else { TempData = 0; }
-            return TempData;
+            Raspberry.IO.Components.Sensors.Temperature.Dht.DhtData data = new Raspberry.IO.Components.Sensors.Temperature.Dht.DhtData();
+            return data;
         }
 
         public bool WriteDataToFile(double[] Data)
@@ -230,11 +276,19 @@ public class Data
             return DataFromFile;
         }
 
+
+
+ /// <summary>
+ /// //
+ /// </summary>
+
         public void AsInput()
         {
+            TempPin = ConnectorPinDetector(11);
             TempPin.Input();
-
-            throw new NotImplementedException();
+            TempSensorConnection(this.myPin);
+           
+            //throw new NotImplementedException();
         }
 
         public void AsOutput()
@@ -244,6 +298,7 @@ public class Data
 
         public bool Read()
         {
+            Console.WriteLine(GetTempSensorData(myPin).ToString());
             throw new NotImplementedException();
         }
 

@@ -29,6 +29,10 @@ namespace RpiApp
             List<double> tmp = new List<double> { };
             tmp=tempSensor.ReadDataFromFile("TempSensorData.txt");
             tmp.ForEach(Console.WriteLine);
+            tempSensor.myPin.AsInput();
+            bool asd=tempSensor.myPin.Read();
+            double shit=tempSensor.GetTempSensorData().Temperature.DegreesCelsius;
+            
         }
     }
 }
