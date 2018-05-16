@@ -56,16 +56,17 @@ public class Data
     {
         public TempSensor()
         {
-            Console.WriteLine("Enter number of conected pin");
-            int PinNumber = Console.Read();
-            TempPin = ConnectorPinDetector(PinNumber);
+            //Console.WriteLine("Enter number of conected pin");
+            //int PinNumber = Console.Read();
+            //TempPin = ConnectorPinDetector(PinNumber);
 
         }
 
-
+        public Raspberry.IO.Components.Sensors.Temperature.Dht.DhtData TempData = new Raspberry.IO.Components.Sensors.Temperature.Dht.DhtData();
         public ConnectorPin TempPin;// real pin
 
-        private IInputOutputBinaryPin pin;// Interfacemy pin for temperature sensor
+        private IInputOutputBinaryPin pin;// Interface pin for temperature sensor
+
         public int PinNumber { get; set; }
 
         public ConnectorPin ConnectorPinDetector(int PinNumber)//gets number of the port from user and assigns real port
@@ -285,7 +286,7 @@ public class Data
         public void AsInput()
         {
 
-            TempPin = ConnectorPinDetector(11);
+            TempPin = ConnectorPinDetector(PinNumber);
             var driver= GpioConnectionSettings.GetBestDriver(GpioConnectionDriverCapabilities.CanWorkOnThirdPartyComputers);
             var pin = driver.InOut(TempPin);
         }
@@ -299,9 +300,9 @@ public class Data
         {
             using (var dhtConnection = new Raspberry.IO.Components.Sensors.Temperature.Dht.Dht22Connection(pin))
             {
-                var data = dhtConnection.GetData();
-                if (data != null)
-                    Console.WriteLine("{0:0.00}% humidity, {1:0.0}°C, {2} attempts", data.RelativeHumidity.Percent, data.Temperature.DegreesCelsius, data.AttemptCount);
+                TempData = dhtConnection.GetData();
+                if (TempData != null)
+                    Console.WriteLine("{0:0.00}% humidity, {1:0.0}°C, {2} attempts", TempData.RelativeHumidity.Percent, TempData.Temperature.DegreesCelsius, TempData.AttemptCount);
                 else
                     Console.WriteLine("Unable to read data");
             }

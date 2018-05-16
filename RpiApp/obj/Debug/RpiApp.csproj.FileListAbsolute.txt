@@ -65,10 +65,10 @@ C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Common.Logging.pdb
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\bin\Debug\Common.Logging.xml
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.csprojResolveAssemblyReference.cache
-C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.Form1.resources
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.Properties.Resources.resources
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.GenerateResource.Cache
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.CoreCompileInputs.cache
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.exe
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.pdb
 C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.csproj.CopyComplete
+C:\Users\Mark\Documents\Visual Studio 2017\Projects\RpiApp\Moto_Computer\RpiApp\obj\Debug\RpiApp.TempSensorForm.resources
